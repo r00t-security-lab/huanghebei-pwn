@@ -6,7 +6,7 @@
 
 | 题目 | 类型 | 说明 |
 | --- | --- | --- |
-| [postbox](postbox/postbox.md) | Pwn / 逆向 | ELF x86-64，glibc 2.31，负数下标越界导致的任意地址读写，最终 ROP 提权 |
+| [postbox](postbox/postbox.md) | Pwn / 逆向 | ELF x86-64，glibc 2.31，负数下标越界导致的任意地址读写 |
 
 ### postbox
 
