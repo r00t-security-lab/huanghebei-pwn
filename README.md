@@ -1,12 +1,13 @@
 # huanghebei-pwn
 
-黄鹤杯 Pwn 题目题解与复现资料。
+黄鹤杯等 CTF 题目的题解与复现资料。
 
 ## 目录
 
 | 题目 | 类型 | 说明 |
 | --- | --- | --- |
 | [postbox](postbox/postbox.md) | Pwn / 逆向 | ELF x86-64，glibc 2.31，负数下标越界导致的任意地址读写 |
+| [molun](molun/REPORT.md) | Pwn | 栈溢出，tape 容量常数与栈帧不一致；通防（删掉构造函数读 flag）绕过与字节级修法 |
 
 ### postbox
 
@@ -20,6 +21,20 @@
 
 ```bash
 cd postbox
+python3 exp.py
+```
+
+### molun
+
+- 报告：[molun/REPORT.md](molun/REPORT.md)（漏洞 / 通防 / 修法 / 打法）
+- Exp：[molun/exp.py](molun/exp.py)
+- 原题未通防版本：`molun/patch/molun.bak`；通防版本：`molun/molun`
+- 修法 A 字节级验证版：`molun/molun.fixcap`
+
+复现：
+
+```bash
+cd molun
 python3 exp.py
 ```
 
