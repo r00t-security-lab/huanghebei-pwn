@@ -30,7 +30,6 @@ python3 exp.py
 - 报告：[molun/REPORT.md](molun/REPORT.md)（漏洞 / 通防 / 修法 / 打法）
 - Exp：[molun/exp.py](molun/exp.py)
 - 原题未通防版本：`molun/patch/molun.bak`；通防版本：`molun/molun`
-- 修法 A 字节级验证版：`molun/molun.fixcap`
 
 复现：
 
