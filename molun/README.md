@@ -2,12 +2,13 @@
 
 栈溢出 + tape 容量常数与栈帧不一致，PIE-only 打法（不依赖 libc 版本）。
 
-完整分析见 [REPORT.md](REPORT.md)（漏洞 / 通防 / 修法 / 打法）。
+完整分析见 [REPORT.md](REPORT.md)（漏洞 / 通防 / 修法 / 打法）；逐步逆向过程见 [molun.md](molun.md)。
 
 ## 文件
 
 | 文件 | 说明 |
 | --- | --- |
+| `molun.md` | 逆向 / 漏洞分析过程（含截图） |
 | `REPORT.md` | 分析报告 |
 | `exp.py` | 利用脚本（pwntools） |
 | `molun` | 上过通防的版本（`0x1180` 处 20 字节 NOP，去掉构造函数里的 `open("./flag")`） |
